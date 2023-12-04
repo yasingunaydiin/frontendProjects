@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>POKEMON | Regions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="description" content="Website of Yasin Gunaydin">
+    <meta name="keywords" content="Pokemon, Games, Japan, gameplay page, dropdown">
+    <meta name="author" content="Yasin Gunaydin">
+<style>
+   * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }  
+body {
+	margin: 0;
+	}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(163, 138, 206);
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+ul.topnav li a:hover:not(.active), .dropdown:hover .dropbtn {
+    background-color: rgb(97, 19, 222);
+    color:white;
+}
+
+ul.topnav li a.active {
+    background-color: rgb(81, 0, 128);
+color:white;
+}
+
+li.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(163, 138, 206);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(83, 83, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(100, 100, 255);
+color:rgb(227, 227, 227);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+    img {width:100%;float:none;margin-left:auto;margin-right:auto;}
+    iframe {width:100%;height:300px;margin-left:auto;margin-right:auto;}
+    video {width:100%;height:auto;margin-left:auto;margin-right:auto;}
+    ul.topnav {width:100%;}
+    ul.topnav li {float: none;}
+    ul.topnav li a {text-align:center;}
+    ul.topnav li.dropdown div.dropdown-content {width:100%;}
+    ul.topnav li.dropdown div.dropdown-content a {text-align:center;}
+}
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 5px;
+    color: rgb(252, 250, 250);
+    background-color: rgb(128, 104, 179);
+    clear: left;
+    text-align: center;
+}
+
+article {
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+}
+
+#description {
+  font-size: 25px;
+}
+
+#list {
+    font-size: 15px;
+    margin: 10px;
+}
+
+
+</style>
+</head>
+<body>
+<ul class="topnav">
+    <li><a href="default.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="concept.html" class="dropbtn">Concept &#9662;</a>
+      <div class="dropdown-content">
+        <a href="d-regions.html">Regions</a><br>
+        <a class="active" href="d-gameplay.html">Gameplay</a><br>
+        
+      </div>
+    </li>
+  
+    <li class="dropdown">
+      <a href="games.html" class="dropbtn">Games &#9662;</a>
+      <div class="dropdown-content">
+        <a href="d-gamelist.html">Game List</a><br>
+        <a href="d-generations.html">Generations</a><br>
+        
+      </div>
+    </li>
+  
+    <li class="dropdown">
+      <a href="media.html" class="dropbtn">Media &#9662;</a>
+      <div class="dropdown-content">
+        <a href="d-anime.html">Anime</a><br>
+        <a href="d-manga.html">Manga</a><br>
+        
+      </div>
+    </li>
+  
+    <li><a href="controversies.html" class="dropbtn">Controversies</a></li>
+    <li><a href="culture.html" class="dropbtn">Culture</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+<div class="container">
+<header>
+   <h1>The Gameplay</h1>
+</header>
+<article>
+  <h1>Info about the regions</h1>
+
+  <p id="description">Each player of the game longs to become the best Pokémon trainer and catch all the Pokémon. In none of the games can all Pokémon be caught, so the player has to trade with someone who has the other game to get all the Pokémon. Some Pokémon the player cannot catch, but must level up through training to evolve.</p>
+
+  <p id="description">However, the evolution of a Pokémon can also take place in other ways:</p>
+
+  <li id="list">Evolution as the Pokémon levels up (most common)</li>
+  <li id="list">Evolution when the Pokémon's Happiness level is reached, when it levels up (In Baby Pokémon, among others).</li>
+  <li id="list">Evolution when a particular evolution stone is used on the Pokémon. There are several types of this.</li>
+  <li id="list">Evolution by trading.</li>
+  <li id="list">Evolution by trading, when the Pokémon holds a certain item.</li>
+  <li id="list">Evolution for a Pokémon called Eevee also depends on the time of day. If it evolves during the day because of its happiness level, it becomes Espeon, but at night it is Umbreon (in the fourth generation, this is also the case with other Pokémon, Sneasel, for example, evolves at night (with a certain item) into Weavile).</li>
+  <li id="list">Evolution by maximising beauty, this occurs with the Pokémon Feebas evolving into Milotic.</li>
+  <li id="list">Evolution by training a level at a particular place.</li>
+  <li id="list">Evolution by training a level with a particular attack</li>
+
+  <p id="description">And one time, 2 Pokémon are created from a Pokémon in evolution (this happens in the evolution of Nincada), here, if there are fewer than 6 Pokémon in the trainer's Pokémon team, a Shedinja is created, as it would be Nincada's cocoon, so to speak, with a life of its own. Some Pokémon also have branched evolution, depending on the mode of evolution, the item used or the time of day. However, some Pokémon also have no evolution, such as Tauros.</p>
+
+  <p id="description">Other Pokémon the player can only obtain by incubating 2 compatible Pokémon at a Day Care Centre, so that an egg appears.</p>
+
+
+  <li>In a few specific cases, one of the parents must also hold a particular object.</li>
+
+<li>If the player does not have 2 compatible Pokémon, they can turn to Ditto. This genderless creature can breed with any Pokémon, except Legendary Pokémon, Baby Pokémon, Unown, another Ditto, and a small group of other genderless Pokémon.</li>
+
+    <p id="description">In addition, the aim is to collect 8 badges, by defeating 8 gym leaders, and challenging the corresponding Elite Four. Each world has its own league:</p>
+
+    <li id="list">Kanto the Indigo League</li>
+    <li id="list">Johto the Johto League</li>
+    <li id="list">Hoenn the Hoenn League</li>
+    <li id="list">Sinnoh the Sinnoh League</li>
+    <li id="list">Unova the Unova League</li>
+    <li id="list">Kalos the Kalos League</li>
+
+    <p id="description">It is also on Gold/Silver/Crystal/Heartgold/Soulsilver to collect eight Kanto Badges and challenge Red.</p>
+
+  </article>
+
+<footer>Copyright &copy; Yasin Gunaydin</footer>
+
+</div>
+
+</body>
+</html>

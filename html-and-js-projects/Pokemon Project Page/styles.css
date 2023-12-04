@@ -1,0 +1,307 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#occupation {
+  font-size: 20;
+  margin-top: -20;
+}
+
+.navlist a:hover {
+  background: black;
+  display: block;
+}
+
+li.dropdown {
+  display: block;
+}
+
+.navlist {
+  display: flex;
+  margin-right: 3rem;
+  letter-spacing: 1;
+  margin: 25;
+  margin-right: 10;
+}
+
+nav {
+display: flex;
+justify-content: flex-end;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: #f78a42;
+z-index: 1;
+}
+
+.dropbtn {
+  background-color: #f78a42;
+  color: white;
+  border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/*ask why the dropdown content is not centered*/
+.dropdown-content { 
+  display: none;
+  position: absolute;
+  background-color: #f78a42;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f78a42;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f78a42;
+}
+
+#welcome-section {
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-section {
+background-color: black;
+background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 100vh;  
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+  background-color: #d4d4d4;
+  color: black;
+  font-size: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+td, th {
+  border: 1px solid #a2a9b1;
+  text-align: center;
+  padding: 6px;
+  
+}
+
+caption {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.top-title {
+  color: white;
+  font-size: 30;
+  text-align: center;
+  margin: 10px;
+}
+
+.bottom-title {
+  color: black;
+  font-size: 30;
+  text-align: center;
+}
+
+.concept-desc {
+  color: black;
+  font-size: 20;
+  text-align: left;
+}
+
+#concept-image {
+   border: 1px solid #c8ccd1;
+   padding: 5px;
+}
+
+.games-desc {
+  color: white;
+  font-size: 20;
+  text-align: left; 
+}
+
+#games-image {
+  border: 1px solid #c8ccd1;
+  padding: 5px;
+  float: right;
+  width: 11%;
+}
+
+#generations-desc {
+  color: black;
+  font-size: 20;
+  text-align: left; 
+}
+
+.regions-desc {
+  color: white;
+  font-size: 20;
+  text-align: left;
+}
+
+#regions-video {
+ float: right; 
+ margin: 10px;
+}
+
+.gameplay-desc {
+  color: black;
+  font-size: 20;
+  text-align: left;
+}
+
+#gameplay-video {
+  float: right; 
+  border: 1px solid #c8ccd1;
+}
+
+/*Because for some reason this title hides behind the navbar. Find a fix for this. */
+#anime-title { 
+  padding-top: 100px;
+}
+
+
+.anime-desc {
+  color: white;
+  font-size: 20;
+  text-align: left; 
+}
+
+#anime-video {
+  border: 1px solid #c8ccd1;
+  margin: 0 auto;
+}
+
+.manga-desc {
+  color: black;
+  font-size: 20;
+  text-align: left; 
+}
+
+fieldset {
+  padding-top: 200px;
+}
+
+.controversies-desc {
+  color: white;
+  font-size: 20;
+  text-align: left; 
+}
+
+.cruelty-desc {
+  color: black;
+  font-size: 20;
+  text-align: left; 
+}
+
+#culture-desc {
+  color: white;
+  font-size: 20;
+  text-align: left; 
+}
+
+.fan-desc {
+  color: black;
+  font-size: 20;
+  text-align: left; 
+}
+
+
+
+.footer {
+  background:#000;
+  padding: 10px;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  }
+  
+  .footer .row {
+  padding: 1% 0%;
+  color:gray;
+  font-size: 0.8em;
+  }
+  
+  .footer .row a {
+  text-decoration: none;
+  color:gray;
+  transition: 0.5s;
+  }
+  
+  .footer .row a:hover {
+  color:#fff;
+  }
+  
+  .footer .row ul {
+  width: 100%;
+  }
+  
+  .footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+  }
+  
+  .footer .row a i {
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  
+  .footer .row ul li {
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+
+  .footer .row a i {
+  margin:0% 3%;
+  }
+  }
+
+

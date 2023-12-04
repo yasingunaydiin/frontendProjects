@@ -1,0 +1,38 @@
+body {
+  font-family: 'Segoe UI';
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(29, 0, 57);
+  margin: 0;
+  background-color: rgb(232, 232, 232);
+}
+
+html {
+  font-size: 10px;
+}
+
+#img-div {
+  padding: 10px;
+  margin: 0;
+}
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+li {
+  margin: 16px 0;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  line-height: 1.6;
+  list-style-type: none;
+}

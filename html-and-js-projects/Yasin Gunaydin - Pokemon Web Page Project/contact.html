@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>POKEMON | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="description" content="Website of Yasin Gunaydin">
+    <meta name="keywords" content="Pokemon, Games, Japan, contact page">
+    <meta name="author" content="Yasin Gunaydin">
+<style>
+    * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+body {
+	margin: 0;
+	}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(163, 138, 206);
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+ul.topnav li a:hover:not(.active), .dropdown:hover .dropbtn {
+    background-color: rgb(97, 19, 222);
+    color:white;
+}
+
+ul.topnav li a.active {
+    background-color: rgb(81, 0, 128);
+color:white;
+}
+
+li.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(163, 138, 206);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(83, 83, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(100, 100, 255);
+    color:rgb(227, 227, 227);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+    img {width:100%;float:none;margin-left:auto;margin-right:auto;}
+    iframe {width:100%;height:300px;margin-left:auto;margin-right:auto;}
+    video {width:100%;height:auto;margin-left:auto;margin-right:auto;}
+    ul.topnav {width:100%;}
+    ul.topnav li {float: none;}
+    ul.topnav li a {text-align:center;}
+    ul.topnav li.dropdown div.dropdown-content {width:100%;}
+    ul.topnav li.dropdown div.dropdown-content a {text-align:center;}
+}
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 5px;
+    color: rgb(252, 250, 250);
+    background-color: rgb(128, 104, 179);
+    clear: left;
+    text-align: center;
+}
+
+article {
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+}
+
+#description {
+  font-size: 25px;
+}
+
+</style>
+</head>
+<body>
+<ul class="topnav">
+    <li><a href="default.html">Home</a></li>
+
+  <li class="dropdown">
+    <a href="concept.html" class="dropbtn">Concept &#9662;</a>
+    <div class="dropdown-content">
+      <a href="d-regions.html">Regions</a><br>
+      <a href="d-gameplay.html">Gameplay</a><br>
+      
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="games.html" class="dropbtn">Games &#9662;</a>
+    <div class="dropdown-content">
+      <a href="d-gamelist.html">Game List</a><br>
+      <a href="d-generations.html">Generations</a><br>
+      
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="media.html" class="dropbtn">Media &#9662;</a>
+    <div class="dropdown-content">
+      <a href="d-anime.html">Anime</a><br>
+      <a href="d-manga.html">Manga</a><br>
+      
+    </div>
+  </li>
+
+  <li><a href="controversies.html" class="dropbtn">Controversies</a></li>
+  <li><a href="culture.html" class="dropbtn">Culture</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+</ul>
+
+<div class="container">
+<header>
+   <h1>Contact Information</h1>
+</header>
+<article>
+  <h1>Contact information of the Pokemon Company</h1>
+
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Pok%C3%A9mon_Company_International_logo.svg/1200px-The_Pok%C3%A9mon_Company_International_logo.svg.png" width="30%" style="float:right;margin:5px;padding-top:200px;">
+
+
+   <p id="description">Join one of the most popular children’s entertainment properties in the world! The Pokémon Company International, a subsidiary of The Pokémon Company in Japan, manages the property outside of Asia and is responsible for brand management, licensing, marketing, the Pokémon Trading Card Game, the animated TV series, home entertainment, and the official Pokémon website. Pokémon was launched in Japan in 1996. For more information, visit www.pokemon.com.</p>
+  
+
+<br>
+
+<form action="action_page.php">
+<fieldset style="width:100%;background-color:rgb(143, 119, 169);color:rgb(0, 0, 0)">
+<legend style="font-family:arial;font-size:200%;color:rgb(0, 0, 0)">Contact us:</legend>
+<b>First name:</b><br>
+<input type="text" name="firstname">
+<br>
+<b>Last name:</b><br>
+<input type="text" name="lastname">
+<br>
+<b>E-mail:</b><br>
+<input type="email" name="email">
+<br>
+<b>Telephone:</b><br>
+<input type="tel" name="usrtel">
+<br>
+<br>
+<b>Gender:</b><br>
+<input type="radio" name="gender" value="female">Female<br>
+<input type="radio" name="gender" value="male">Male<br>
+<br>
+<b>Region:</b><br>
+<input type="radio" name="faculty" value="commerce">North America<br>
+<input type="radio" name="faculty" value="communications">Europe<br>
+<input type="radio" name="faculty" value="law">Asia<br>
+<input type="radio" name="faculty" value="law">Oceania<br>
+<br>
+<b>Send a response to:</b><br>
+  <input type="checkbox" name="sendtohome" value="home_mail">Home (mailing address)<br>
+  <input type="checkbox" name="sendtomobilephone" value="mobile_phone">Mobile phone (SMS)<br>
+  <input type="checkbox" name="sendtoemail" value="email_address">E-mail<br>
+  <br>
+<b>Comment:</b><br>
+<textarea name="message" rows="10" cols="80">
+</textarea>
+<br>
+<input type="submit" value="Send" style="color:rgb(0, 0, 0);font-family:arial;font-size:120%">
+<input type="reset" value="Reset" style="color:rgb(0, 0, 0);font-family:arial;font-size:120%">
+</fieldset>
+</form>
+
+<br>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.614558751493!2d-122.20310898436927!3d47.614183979185256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906c8634bcba11%3A0x9bf7fb36ae3771c2!2s10400%20NE%204th%20St%20Unit%202800%2C%20Bellevue%2C%20WA%2098004%2C%20Verenigde%20Staten!5e0!3m2!1snl!2str!4v1669721542578!5m2!1snl!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</article>
+
+<footer>Copyright &copy; Yasin Gunaydin</footer>
+
+</div>
+
+</body>
+</html>

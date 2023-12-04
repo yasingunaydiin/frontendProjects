@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles.css" rel="stylesheet">
+<title>Cloud Translation Documentation</title>
+</head>
+
+<body>
+<nav id="navbar-top">
+
+
+
+  
+</nav>
+
+<nav id="navbar-top2">
+
+
+
+
+  
+</nav>
+<nav id="navbar">
+<header> .<img src="https://www.gstatic.com/devrel-devsite/prod/v04993a285e47ce7ae4bb513179c3071d4f2a8975b8f303b510c516323adf1b16/cloud/images/cloud-logo.svg" style="margin-left:20px;height:30px;padding-top:12px;"></header>
+<ul>
+<span class="tooltip">Cloud Translation API</span>
+
+<li>
+  <a class="nav-link" href="#product_overview">Product overview</a>
+</li>
+<li>
+  <a class="nav-link" href="#what_is_cloud_translation">What is Cloud Translation?</a>
+</li>
+
+<span class="tooltip">Setup</span>
+
+<li>
+  <a class="nav-link" href="#setting_up">Setting up</a>
+</li>
+<li>
+  <a class="nav-link" href="#translate_text_(basic_edition)">Translate text (Basic edition)</a>
+</li>
+<li> 
+  <a class="nav-link" href="#translate_text_(advanced_edition)">Translate text (Advanced edition)</a>
+</li>
+
+<span class="tooltip">How-to Guides</span>
+
+<li>
+  <a class="nav-link" href="#all_how-to_guides">All how-to guides</a>
+</li>
+<li>
+  <a class="nav-link" href="#basic">Basic</a>  
+</li>
+<li>
+  <a class="nav-link" href="#advanced">Advanced</a>
+</li>
+
+<span class="tooltip">Tutorials</span>
+
+<li>
+  <a class="nav-link" href="#all_tutorials">All Tutorials</a>
+</li>
+<li>
+  <a class="nav-link" href="https://github.com/GoogleCloudPlatform/ios-docs-samples/tree/master/translation/swift" target="_blank">Cloud Translation with gRPC and Swift</a>
+</li>
+<li>
+  <a class="nav-link" href="translating-and-speaking-text-from-photo.html" target="_blank">Translating text from a photo</a>
+</li>
+
+<li>
+  <a class="nav-link" href="#references">References</a>
+</li>
+</ul>
+
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="product_overview">
+<header id="product_overview" class="text">Product overview</header>
+<article>
+  <h1>Four translation products tailored for your needs</h1>
+  <h4>Translation Hub</h4>
+<p>Easily translate content into 135 languages with an intuitive, business-user-friendly interface and integrate human feedback where required. Translation Hub makes it possible for enterprises to customize and manage translation workloads at a previously unachievable scale and cost.</p>
+
+<h4>Translation API</h4>
+
+<p>Translation API Basic uses Google’s neural machine translation technology to instantly translate texts into more than one hundred languages. Translation API Advanced offers the same fast, dynamic results you get with Basic and additional customization features. Customization matters for domain- and context-specific terms or phrases, and formatted document translation.</p>
+
+<h4>Media Translation API</h4>
+
+<p>Media Translation API delivers real-time audio translation directly to your content, and applications with enhanced accuracy, and simplified integration. You also improve user experience with low-latency streaming translation, and scale quickly with straightforward internationalization.</p>
+
+
+</article>
+
+  </section>
+  <section class="main-section" id="what_is_cloud_translation">
+    <header id="what_is_cloud_translation">What is Cloud Translation</header>
+
+    <article>
+    <p>Cloud Translation enables your websites and applications to dynamically translate text programmatically through an API. Translation uses a Google pre-trained or a custom machine learning model to translate text. By default, Translation uses a Google pre-trained Neural Machine Translation (NMT) model, which Google updates on semi-regular cadence when more training data or better techniques become available.</p>
+
+    <aside class="note">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/A_Blue_Star.png" style="height:10px;">
+<strong>Note:</strong>
+<span>No customer data and translations are used to improve the model. For more information about data usage, see the Data usage FAQ.</span>
+    </aside>
+
+<h1>Benefits</h1>
+
+<p>Cloud Translation can translate text for more than 100 language pairs. If you don't know the language of your source text, Cloud Translation can detect it for you. For a list of all of the supported languages, see Supported languages.</p>
+
+<p>Cloud Translation scales seamlessly and allows unlimited character translations per day. However, there are restrictions on content size for each request and request rates. Additionally, you can use quota limits to manage your budget. For more information, see Quotas and limits.</p>
+
+<h1>Example use case</h1>
+
+<p>As an enterprise organization, you can include translated text in existing internal workflows. For example, you might have a global support team that receives customer cases in many different languages. You can add Translation into your workflow to translate those customer cases into the native language of your support team members.</p>
+
+<p>By using Translation, you improve the overall efficiency of your support team because they don't need to manually translate text themselves or rely on others.</p>
+
+<h1>Cloud Translation editions</h1>
+
+<p>Cloud Translation offers two editions:</p>
+
+<li>Cloud Translation - Basic</li>
+<li>Cloud Translation - Advanced</li>
+
+<p>Both editions support language detection and translation. They also use the same Google pre-trained model to translate content. Cloud Translation - Advanced includes features such as batch requests, AutoML custom models, and glossaries. For example, if you want to consistently translate terms that are specific to your use case, you can use glossaries to do that.</p>
+
+<p>The edition you use depends on which version of the client libraries or service endpoint that you use.</p>
+
+<p>If you are planning a new project, build your application with Cloud Translation - Advanced to take advantage of new features and service improvements. Cloud Translation - Basic remains available, but does not support new features like using glossaries, requesting batch translations, or using AutoML models.</p>
+
+<p>For a comparison between the two editions, see Comparing Basic and Advanced.</p>
+
+<h1>Migrate to Advanced from Basic</h1>
+
+<p>If already have existing applications that use Cloud Translation - Basic, you can migrate them to use Cloud Translation - Advanced. To use Cloud Translation - Advanced, you must update applications to use, for example, service accounts and the Advanced edition client libraries. For more information, see Migrating to Cloud Translation - Advanced.</p>
+
+<h1>AutoML custom models</h1>
+
+<p>AutoML Translation is a separate service for building custom models. With AutoML Translation, you import your own data (sentence pairs) to train custom models for your domain-specific needs. You can then use the custom models with Cloud Translation - Advanced. For example, you can use AutoML Translation to create a custom model tailored for translating financial information. You can then use these custom models with Cloud Translation - Advanced for translating financial reports.</p>
+
+<p>You can use AutoML custom models with Cloud Translation - Advanced only; Cloud Translation - Basic doesn't support custom models.</p>
+
+<p>For more information about AutoML, see the AutoML Translation documentation.</p>
+
+<h1>Pricing</h1>
+
+<p>Translation charges you on a monthly basis based on the number of characters that you send. For more information, see Pricing.</p>
+
+    </article>
+
+  </section>
+  
+  <section class="main-section" id="setting_up">
+    <header id="setup">Setting up</header>
+
+    <article>
+    <p>To start using Cloud Translation, you need a project that has the Cloud Translation API enabled and credentials to make authenticated calls. The following sections detail how to get set up before you make your first call to the Cloud Translation API</p>
+
+    <p>The setup process involves the Google Cloud console, which is a web interface that you can use to provision, configure, manage, and monitor systems in Google Cloud. If you haven't used the Google Cloud console before, see the Cloud console page for more information.</p>
+
+    <h1>Before you begin</h1>
+
+    <p>Cloud Translation is available in two editions (Basic and Advanced). Decide which edition to use because that determines which version of the client libraries to install.</p>
+
+    <h1>Create or select a project</h1>
+
+    <p>To use services provided by Google Cloud, you must create a project. A project organizes all your Google Cloud resources. A project consists of a set of collaborators, enabled APIs (and other resources), monitoring tools, billing information, and authentication and access controls. You can create one project, or you can create multiple projects and use them to organize your Google Cloud resources in a resource hierarchy. When creating a project, take note of the project ID. You will need this ID to make API calls. For more information on projects, see the Resource Manager documentation.</p>
+
+    <p>We recommend that you create separate projects for experiments, testing, and production. After you create a project, record the project number or ID. You must provide the project number (or ID) when you make calls to the Cloud Translation API.</p>
+
+    <p>In the Google Cloud console, on the project selector page, select or create a Google Cloud project.</p>
+
+
+    </article>
+  </section>
+  <section class="main-section" id="translate_text_(basic_edition)">
+    <header id="translate_text_basic">Translate text (Basic edition)</header>
+
+    <article>
+    <p>This page shows you how to translate a sample text by using Cloud Translation Basic.</p>
+
+    <h1>Before you begin</h1>
+    <p>Before you can start using the Cloud Translation API, you must have a project that has the Cloud Translation API enabled, and you must have a private key with the appropriate credentials. You can also install client libraries for common programming languages to help you make calls to the API. For more information, see the Setup page.</p>
+
+    <h1>Translate text example</h1>
+<p>The following example demonstrates how to use Cloud Translation - Basic to translate text to a given target language.</p>
+
+<section>
+<p>Make a Cloud Translation - Basic request using a REST method call to the Basic <code>translate</code> method. You identify your source and target languages by using their ISO-639-1 codes.</p>
+<p>The following shows an example of a <code>POST</code> request using <code>curl</code> or PowerShell.</p>
+<p>Before using any of the request data, make the following replacements:</p>
+<p>HTTP method and URL:</p>
+
+<section>
+<pre>
+  POST https://translation.googleapis.com/language/translate/v2
+</pre>
+
+</section>
+
+<p>Request JSON body:</p>
+
+<section>
+  <pre>
+    {
+      "q": "The Great Pyramid of Giza (also known as the Pyramid of Khufu or the Pyramid of Cheops)
+      is the oldest and largest of the three pyramids in the Giza pyramid complex.",
+      "source": "en",
+      "target": "es",
+      "format": "text"
+    }
+  </pre>
+  
+  </section>
+
+</section>
+
+
+    </article>
+  </section>
+  <section class="main-section" id="translate_text_(advanced_edition)">
+    <header id="translate_text_advanced">Translate text (Advanced edition)</header>
+    <article>
+    <p>This document shows you how to translate a sample text by using Cloud Translation Advanced.</p>
+    <h1>Before you begin</h1>
+
+  <p>Before you can start using the Cloud Translation API, you must have a project that has the Cloud Translation API enabled, and you must have a private key with the appropriate credentials. You can also install client libraries for common programming languages to help you make calls to the API. For more information, see the Setup page.</p>
+
+  <h1>Translate text example</h1>
+  <p>The following example demonstrates how to use Cloud Translation - Advanced to translate text to a given target language.</p>
+
+  <aside class="note">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/A_Blue_Star.png" style="height:10px;">
+<strong>Note:</strong>
+<span>Note: The sample curl command uses the gcloud auth application-default print-access-token command to get an authentication token.</span>
+  </aside>
+
+  <p>Before using any of the request data, make the following replacements:</p>
+  <p>HTTP method and URL:</p>
+  
+  <section>
+    <pre>
+      POST https://translation.googleapis.com/v3/projects/PROJECT_NUMBER_OR_ID:translateText
+    </pre>
+    
+    </section>
+
+    <p>Request JSON body:</p>
+
+    <section>
+      <pre>
+        {
+          "sourceLanguageCode": "en",
+          "targetLanguageCode": "ru",
+          "contents": ["Dr. Watson, come here!"],
+          "mimeType": "text/plain"
+        }
+      </pre>
+      
+      </section>
+
+
+    </article>
+  </section>
+  
+  <section class="main-section" id="all_how-to_guides">
+    <header id="all_howto_guides">All how-to guides</header>
+
+    <div class="card" id="how-to-guides">
+<header>
+  <strong id="basic">Basic</strong>
+</header>
+<ul class="card-showcase">
+  <li>
+    <a id="a" href="basic-translating-text.html" target="_blank">
+      <h3 style="margin-bottom:-15px;">Translating text</h3>
+      <p style="font-size:15px;">Use the Cloud Translation - Basic to translate text.</p>
+    </a>
+  </li>
+  <li>
+    <a id="a" href="basic-discover-languages.html" target="_blank">
+      <h3 style="margin-bottom:-15px;">Discovering supported languages</h3>
+      <p style="font-size:15px;">Use the Cloud Translation - Basic to discover supported languages.</p>
+    </a>
+  </li>
+  <li>
+    <a id="a" href="basic-detecting-language.html" target="_blank">
+      <h3 style="margin-bottom:-15px;">Detecting language</h3>
+      <p style="font-size:15px;">Use the Cloud Translation - Basic to detect the language of a string.</p>
+    </a>
+  </li>
+</ul>
+
+
+    </div>
+    <div class="card" id="how-to-guides">
+<header>
+  <strong id="advanced">Advanced</strong>
+</header>
+<ul class="card-showcase">
+  <li>
+    <a id="a" href="translating-text.html" target="_blank">
+      <h3 style="margin-bottom:-15px;">Translating text</h3>
+      <p style="font-size:15px;">Use the Cloud Translation - Advanced to translate text.</p>
+    </a>
+  </li>
+  <li>
+    <a id="a" href="discover-languages.html" target="_blank">
+      <h3 style="margin-bottom:-15px;">Discovering supported languages</h3>
+      <p style="font-size:15px;">Use the Cloud Translation - Advanced to discover supported languages.</p>
+    </a>
+  </li>
+  <li>
+    <a id="a" href="detecting-language.html" target="_blank">
+      <h3 style="margin-bottom:-15px;">Detecting language</h3>
+      <p style="font-size:15px;">Use the Cloud Translation - Advanced to detect the language of a string.</p>
+    </a>
+  </li>
+  <li>
+    <a id="a" href="creating-glossaries.html" target="_blank">
+      <h3 style="margin-bottom:-15px;">Creating and using glossaries</h3>
+      <p style="font-size:15px;">Use the Cloud Translation - Advanced to use a custom glossary when translating text.</p>
+    </a>
+  </li>
+  <li>
+    <a id="a" href="batch-requests.html" target="_blank">
+      <h3 style="margin-bottom:-15px;">Making batch requests</h3>
+      <p style="font-size:15px;">Use the Cloud Translation - Advanced to make batch requests for translation.</p>
+    </a>
+  </li>
+  
+</ul>
+
+
+
+
+    </div>
+    
+  </section>
+ 
+
+  
+  <section class="main-section" id="all_tutorials">
+    
+    <header id="all_tutorials">All Tutorials</header>
+    <code></code>
+    <code></code>
+    <code></code>
+
+    <article>
+      <div class="card" id="how-to-guides">
+        <header> .</header>
+<ul>
+  <li>
+    <a id="a" href="https://github.com/GoogleCloudPlatform/ios-docs-samples/tree/master/translation/swift" target="_blank">
+      <h3 style="margin-bottom:-15px;">Cloud Translation with gRPC and Swift</h3>
+      <p style="font-size:15px;">This app demonstrates how to make gRPC connections to the Cloud Translation API to get the translated text.</p>
+    </a>
+  </li>
+
+</ul>
+<ul>
+<li>
+  <a id="a" href="translating-and-speaking-text-from-photo.html" target="_blank">
+    <h3 style="margin-bottom:-15px;">Translating and speaking text from a photo with glossaries</h3>
+    <p style="font-size:15px;">This app demonstrates how to make gRPC connections to the Cloud Translation API to get the translated text.</p>
+  </a>
+</li>
+
+</ul>
+</div>
+
+    </article>
+  </section>
+  
+  
+
+  <section class="main-section" id="references">
+    <header id="references">References</header>
+
+    <article>
+<p>This is a short project to refine and develop my HTML and CSS skills. There are no JavaScript elements inside this HTML.</p>
+
+<p>All credits regarding text content goes to Google Cloud.</p>
+<a href="https://cloud.google.com/" style="text-decoration:none;">https://cloud.google.com/</a>
+
+    </article>
+  </section>
+
+<section class="main-section" id="filler">
+  <header>filler</header>
+  </section>
+  
+<section class="main-section" id="filler">
+  <header>filler</header>
+  </section>
+  
+<section class="main-section" id="filler">
+  <header>filler</header>
+  </section>
+
+  <section class="main-section" id="filler">
+    <header>filler</header>
+    </section>
+
+
+</main>
+
+</body>
+
+</html>
